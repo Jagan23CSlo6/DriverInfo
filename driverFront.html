@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DriverFront.css">
+
+</head>
+<script>
+    function showTab(tab) {
+        document.querySelectorAll('.form-section').forEach(section => {
+            section.classList.add('hidden');
+        });
+        document.querySelector(`.${tab}`).classList.remove('hidden');
+
+        document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`.tab[onclick="showTab('${tab}')"]`).classList.add('active');
+    }
+</script>
+
+<body>
+    <div>
+        <div class="top">
+
+        </div>
+        <div class="outercontainer">
+            <div class="sidebar">
+
+            </div>
+            <div class="main">
+
+                <div class="tabs">
+                    <button class="tab active" onclick="showTab('basic')">Basic</button>
+                    <button class="tab" onclick="showTab('otherDetails')">Other Details</button>
+                </div>
+
+
+                <div class="container">
+
+
+                    <div class="basic form-section">
+                        <div></div>
+                        <div class="profile-container">
+                            <img src="profile.png" alt="Profile" class="profile-image">
+                            <div class="add-icon">+</div>
+                        </div>
+                        <div></div>
+                        <div class="input-container">
+                            <input type="text" id="driverid" class="DriverID" placeholder="Unique ID">
+                            <label class="driverid">Driver ID</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" id="drivername" class="DriverName" placeholder="xxxxxxxxxxxxxx">
+                            <label class="drivername">Driver Name</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="date" id="dob" class="DOB" placeholder="">
+                            <label class="dob">DOB</label>
+                        </div>
+                        <div class="input-container">
+                            <label class="BG">BloodGroup</label>
+                            <select class="BGSelect" id="bloodgroup">
+                                <option value="O+ve">O+ve</option>
+                                <option value="O-ve">O-ve</option>
+                                <option value="B+ve">B+ve</option>
+                                <option value="B-ve">B-ve</option>
+                                <option value="AB+ve">AB+ve</option>
+                                <option value="AB-ve">AB-ve</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label class="PH">Phone Number</label>
+                            <div class="phone-input">
+                                <select class="country-code" id="countryCode">
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+81">🇯🇵 +81</option>
+                                    <option value="+49">🇩🇪 +49</option>
+                                    <option value="+33">🇫🇷 +33</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                </select>
+                                <input type="number" id="ph" class="PH" placeholder="Enter phone number" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label class="gender">Gender</label>
+                            <select class="genderSelect" id="Gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Transgender">Transgender</option>
+                            </select>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="state" class="STATE" placeholder="">
+                            <label class="Lstate">State</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="dist" class="Dist" placeholder="">
+                            <label class="LDistrict">District</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="file" placeholder="">
+                            <label class="file"></label>
+                        </div>
+
+                        <div></div>
+                        <div></div>
+                        <div class="D-buttons1">
+                            <button class="cancel1">Cancel</button>
+                            <button class="next">Next</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="otherDetails form-section hidden">
+
+                        <div class="input-container">
+
+                            <input type="text" id="contactname" class="ContactName" placeholder="Emergency Contact ">
+                            <label class="cName">Contact Name</label>
+                        </div>
+                        <div class="input-container">
+                            <label class="EmergencyContact">Contact Number</label>
+                            <div class="phone-input">
+                                <select class="country-code" id="countryCode">
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+81">🇯🇵 +81</option>
+                                    <option value="+49">🇩🇪 +49</option>
+                                    <option value="+33">🇫🇷 +33</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                </select>
+                                <input type="number" id="contactNo" class="contact" placeholder="Enter Contact number" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="relation" class="Relation" placeholder=" ">
+                            <label class="cName">Relation Type</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="Rstate" class="relSTATE" placeholder="">
+                            <label class="rstate">State</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="Rdist" class="relDist" placeholder="">
+                            <label class="rDistrict">District</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="Raddress" class="relAddress" placeholder="">
+                            <label class="rAddress">Address</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="license" class="License" placeholder="">
+                            <label class="lice">License Number</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="date" id="expirydate" class="ExpiryDate" placeholder="">
+                            <label class="Exdate">Expiry Date</label>
+                        </div>
+                       <div class="input-container">
+
+                            <input type="file" placeholder="">
+                            <label class="file"></label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="text" id="medi-condition" class="medi-cond" placeholder="">
+                            <label class="medicond">Medical Condition</label>
+                        </div>
+
+                        <div class="input-container">
+
+                            <input type="text" id="Medication" class="medicate" placeholder="">
+                            <label class="Medi">Medication</label>
+                        </div>
+                        <div class="input-container">
+
+                            <input type="file" placeholder="">
+                            <label class="file"></label>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div class="D-buttons2">
+                            <button class="cancel2">Cancel</button>
+                            <button class="save">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

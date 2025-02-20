@@ -44,8 +44,8 @@
     <nav>
         <ul>
 
-            <button id="basicBtn" class="active" onclick="showSection('basic', this)">Basic</button>
-            <button id="otherDetailsBtn" onclick="showSection('otherdetails', this)">Other Details</button>
+            <button id="basicBtn" class="active" >Basic</button>
+            <button id="otherDetailsBtn" >Other Details</button>
         </ul>
     </nav>
 
@@ -221,16 +221,6 @@
 
 
 </body>
-<script>
-    function showSection(sectionId, btn) {
-        document.getElementById('basic').classList.add('hidden');
-        document.getElementById('otherdetails').classList.add('hidden');
-        document.getElementById(sectionId).classList.remove('hidden');
 
-        document.getElementById('basicBtn').classList.remove('active');
-        document.getElementById('otherDetailsBtn').classList.remove('active');
-        btn.classList.add('active');
-    }
-</script>
 
 </html>

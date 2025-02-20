@@ -1,0 +1,810 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    max-width: 1440px;
+    max-height: 1024px;
+    background-color: #fff;
+    position: fixed;
+
+}
+
+.top {
+    min-width: 1440px;
+    height: 80px;
+    background-color: #213A8B;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.profile-icon {
+    /* 🦆 icon "profile" */
+
+    position: absolute;
+    left: 91.74%;
+    right: 6.53%;
+    top: 2.73%;
+    bottom: 94.82%;
+
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 92.29%;
+    right: 7.08%;
+    top: 3.18%;
+    bottom: 95.93%;
+
+    background: #FFFDFD;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 91.74%;
+    right: 6.53%;
+    top: 2.73%;
+    bottom: 94.82%;
+
+    background: #FFFDFD;
+    width: 25px;
+    height: 25px;
+    top: 28px;
+    left: 1321px;
+    background-color: #203C8A;
+}
+
+
+
+.sidebar {
+    width: 240px;
+    height: 944px;
+    top: 80px;
+
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+
+    border-right: 1px solid #00000040;
+    overflow-y: hidden;
+}
+
+.sidelogo {
+    width: 70px;
+    height: 70px;
+    top: 101px;
+    left: 17px;
+    background-color: white;
+}
+
+.dashboardLogo {
+    width: 35px;
+    height: 30px;
+    top: 198px;
+    left: 22px;
+
+}
+
+.backButton {
+    position: fixed;
+    overflow-y: hidden;
+    width: 240px;
+    height: 80px;
+    left: 0;
+    top: 944px;
+    background-color: #062067;
+    color: #fff;
+}
+
+p {
+    width: 25px;
+    height: 25px;
+    top: 971px;
+    left: 106px;
+    background-color: #062067;
+    color: #fff;
+
+}
+
+nav {
+    max-width: 1171px;
+    background-color: #ffff;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid blue;
+
+}
+
+
+#basicBtn {
+    width: 169px;
+    height: 52px;
+    top: 106px;
+    left: 499px;
+    background-color: #ffff;
+    color: #000;
+    position: fixed;
+    border: none;
+
+}
+
+#otherDetailsBtn {
+    width: 169px;
+    height: 52px;
+    background-color: #ffff;
+    top: 108px;
+    left: 991px;
+    position: fixed;
+    color: #000;
+    border: none;
+
+
+}
+
+/* .container {
+
+
+    background-color: white;
+    position: fixed;
+    min-height: 915px;
+    max-width: 1171px;
+    left: 252px;
+    top: 95px;
+    right: 12px;
+    overflow-y: hidden;
+
+
+} */
+
+.container * {
+    background-color: #ffff;
+}
+
+label {
+    z-index: 1000;
+    padding-left: 5px;
+
+}
+
+input {
+    border: 1px solid #000;
+    padding: 15px;
+}
+
+select {
+    border: 1px solid #000;
+    padding: 15px;
+}
+
+.form-section {
+    width: 1171px;
+    background-color: white;
+
+
+    z-index: 1000;
+
+}
+
+.profile-container {
+
+
+    height: 115px;
+    top: 171px;
+    left: 759px;
+    background-color: #ffff;
+    border-width: 1px;
+
+}
+
+.profile-image {
+    width: 118px;
+    height: 115px;
+    top: 171px;
+    left: 759px;
+    border-width: 1px;
+
+}
+
+.add-icon {
+
+    width: 30.237499237060547px;
+    height: 29.46875px;
+    top: 245.94px;
+    left: 840.76px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+
+
+}
+
+.add-icon:hover {
+    cursor: pointer;
+}
+
+.DriverID {
+    width: 350px;
+    height: 50px;
+    top: 339px;
+    left: 290px;
+    opacity: 0.3;
+    border-width: 1px;
+}
+
+.L-driverid {
+    width: 76px;
+    height: 24px;
+    top: 329px;
+    left: 297px;
+    z-index: 1000;
+
+}
+
+.L-drivername {
+    width: 100px;
+    height: 24px;
+    top: 329px;
+    left: 677px;
+    z-index: 1000;
+
+}
+
+.DriverName {
+    width: 350px;
+    height: 50px;
+    top: 338px;
+    left: 670px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-dob {
+    width: 38px;
+    height: 19px;
+    top: 329px;
+    left: 1065px;
+
+
+}
+
+.DOB {
+    width: 350px;
+    height: 50px;
+    top: 338px;
+    left: 1057px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+
+
+.L-PH {
+    width: 90px;
+    height: 24px;
+    top: 435px;
+    left: 677px;
+    padding-left: 5px;
+
+}
+
+.L-BG {
+    width: 100px;
+    height: 24px;
+    top: 437px;
+    left: 297px;
+
+}
+
+.BGSelect {
+    width: 350px;
+    height: 50px;
+    top: 449px;
+    left: 290px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+
+
+
+.country-code1 {
+    width: 45px;
+    height: 24px;
+    top: 462px;
+    left: 683px;
+    color: #000;
+    background-color: transparent;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.PH {
+    width: 350px;
+    height: 50px;
+    top: 448px;
+    left: 670px;
+    opacity: 0.3;
+    border-width: 1px;
+    padding-left: 60px;
+
+
+}
+
+.L-gender {
+    width: 60px;
+    height: 24px;
+    top: 437px;
+    left: 1057px;
+
+}
+
+.genderSelect {
+
+    width: 350px;
+    height: 50px;
+    top: 448px;
+    left: 1050px;
+    opacity: 0.3;
+    border-width: 1px;
+}
+
+.L-vehic {
+    width: 103px;
+    height: 24px;
+    top: 546px;
+    left: 297px;
+
+}
+
+.VehicleType {
+    width: 350px;
+    height: 50px;
+    top: 559px;
+    left: 292px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-WType {
+    width: 85px;
+    height: 24px;
+    top: 546px;
+    left: 677px;
+
+}
+
+.WorkType {
+    width: 350px;
+    height: 50px;
+    top: 559px;
+    left: 670px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-Jdate {
+    width: 102px;
+    height: 19px;
+    top: 547px;
+    left: 1057px;
+
+}
+
+.Join {
+    width: 350px;
+    height: 50px;
+    top: 559px;
+    left: 1050px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-headAddr {
+    width: 80px;
+    height: 30px;
+    top: 670px;
+    left: 797px;
+    padding-left: 10px;
+
+}
+
+hr {
+    width: 1108px;
+    top: 679px;
+    left: 291px;
+    border-width: 1px;
+
+}
+
+.L-state {
+    width: 50px;
+    height: 24px;
+    top: 739px;
+    left: 297px;
+
+}
+
+.STATE {
+    width: 350px;
+    height: 50px;
+    top: 752px;
+    left: 290px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.Dist {
+    width: 350px;
+    height: 50px;
+    top: 752px;
+    left: 670px;
+    opacity: 0.3;
+    border-width: 1px;
+
+
+}
+
+.L-District {
+    width: 60px;
+    height: 24px;
+    top: 739px;
+    left: 677px;
+
+
+}
+
+.L-Addres {
+    width: 70px;
+    height: 24px;
+    top: 739px;
+    left: 1057px;
+
+}
+
+.addr {
+    width: 350px;
+    height: 50px;
+    top: 752px;
+    left: 1048px;
+    opacity: 0.3;
+    border-width: 1px;
+    background-color: #ffff;
+
+}
+
+.cancel1 {
+    width: 110px;
+    height: 40px;
+    top: 849px;
+    left: 1122px;
+    border-radius: 15px;
+    border: none;
+    color: #000000;
+    background-color: #E8E5E5;
+    box-shadow: #00000040;
+    cursor: pointer;
+}
+
+
+.next {
+    width: 110px;
+    height: 40px;
+    top: 848px;
+    left: 1277px;
+    box-shadow: #00000040;
+    border-radius: 15px;
+    border: none;
+    background-color: #203C8A;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.ContactName {
+    width: 350px;
+    height: 50px;
+    top: 236px;
+    left: 289px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-cName {
+    width: 110px;
+    height: 22px;
+    top: 227px;
+    left: 297px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+.L-rel {
+    width: 110px;
+    height: 24px;
+    top: 225px;
+    left: 675px;
+
+
+}
+
+.Relation {
+    width: 350px;
+    height: 50px;
+    top: 236px;
+    left: 669px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-EmergencyContact {
+    width: 137px;
+    height: 24px;
+    top: 225px;
+    left: 1055px;
+
+}
+
+
+
+
+
+.country-code {
+    width: 45px;
+    height: 24px;
+    top: 249px;
+    left: 1054px;
+
+
+    cursor: pointer;
+}
+
+.contact {
+    width: 350px;
+    height: 50px;
+    top: 236px;
+    left: 1047px;
+    opacity: 0.3;
+    border-width: 1px;
+    padding-left: 60px;
+
+}
+
+.License {
+    width: 350px;
+    height: 50px;
+    top: 396px;
+    left: 289px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-lice {
+    width: 86px;
+    height: 24px;
+    top: 386px;
+    left: 297px;
+}
+
+.L-Exdate {
+    width: 93px;
+    height: 24px;
+    top: 385px;
+    left: 675px;
+
+}
+
+.ExpiryDate {
+    width: 350px;
+    height: 50px;
+    top: 396px;
+    left: 669px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-licType {
+    width: 105px;
+    height: 24px;
+    top: 383px;
+    left: 1055px;
+
+}
+
+.lictypet {
+    width: 350px;
+    height: 50px;
+    top: 396px;
+    left: 1047px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+
+
+
+.medi-cond {
+    width: 350px;
+    height: 50px;
+    top: 569px;
+    left: 289px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-medicond {
+    width: 147px;
+    height: 24px;
+    top: 558px;
+    left: 297px;
+
+}
+
+.medicate {
+    width: 350px;
+    height: 50px;
+    top: 569px;
+    left: 669px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-Medi {
+    width: 92px;
+    height: 24px;
+    top: 559px;
+    left: 675px;
+
+}
+
+
+.descipt {
+    width: 350px;
+    height: 50px;
+    top: 569px;
+    left: 1049px;
+    opacity: 0.3;
+    border-width: 1px;
+
+}
+
+.L-Descript {
+    width: 92px;
+    height: 24px;
+    top: 556px;
+    left: 1055px;
+
+}
+
+
+
+.ID {
+    width: 350px;
+    height: 51px;
+    top: 731px;
+    left: 290px;
+    border-width: 1px;
+
+}
+
+.LicenseProof {
+    width: 350px;
+    height: 51px;
+    top: 732px;
+    left: 667px;
+    border-width: 1px;
+
+}
+
+.document {
+    width: 350px;
+    height: 51px;
+    top: 734px;
+    left: 1047px;
+    border-width: 1px;
+
+}
+
+.cancel2 {
+    width: 110px;
+    height: 40px;
+    top: 849px;
+    left: 1122px;
+    border-radius: 15px;
+    border: none;
+    color: #000000;
+    background-color: #E8E5E5;
+    box-shadow: #00000040;
+    cursor: pointer;
+}
+
+
+.save {
+    width: 110px;
+    height: 40px;
+    top: 848px;
+    left: 1277px;
+    box-shadow: #00000040;
+    border-radius: 15px;
+    border: none;
+    background-color: #203C8A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.headLice {
+    width: 1108px;
+    top: 341px;
+    left: 290px;
+    border-width: 1px;
+
+}
+
+
+.L-headLice {
+    width: 85px;
+    height: 30px;
+    top: 330px;
+    left: 786px;
+
+    padding-left: 10px;
+}
+
+.headMedical {
+    width: 1122px;
+    top: 505px;
+    left: 290px;
+
+    border-width: 1px;
+
+}
+
+.L-headMedical {
+    width: 80px;
+    height: 30px;
+    top: 497px;
+    left: 795px;
+    padding-left: 10px;
+
+}
+
+.L-headFile {
+    width: 100px;
+    height: 30px;
+    top: 670px;
+    left: 785px;
+    padding-left: 10px;
+
+}
